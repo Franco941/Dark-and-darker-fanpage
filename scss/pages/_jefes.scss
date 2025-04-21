@@ -1,0 +1,47 @@
+@use "../utilities/variables" as *;
+
+#jefes {
+  .jefes-contenido {
+    background-color: $color-fondo;
+
+    .jefe-nombre {
+      font-family: $fuente-secundario;
+      color: red;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .jefe-imagen {
+      border-radius: 15px;
+    }
+
+    .jefe-info {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 8px;
+
+      p {
+        line-height: 1.6;
+        color: $color-texto;
+      }
+
+      ul {
+        margin-top: 1rem;
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .jefe-video {
+
+      // añade un ligero sombreado o borde si quieres resaltar
+      iframe {
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

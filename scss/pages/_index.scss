@@ -1,0 +1,53 @@
+@use "../utilities/animation";
+@use "../utilities/maps" as *;
+@use "../utilities/variables" as *;
+
+#principal {
+  .presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image: url("../../assets/img/Fondo\ de\ inicio.png");
+    background-position: center;
+    height: 100vh;
+
+    h1 {
+      font-family: map-get($map: $fuentes, $key: primario);
+      font-weight: 700;
+      font-size: 4rem;
+      color: map-get($map: $colores, $key: texto);
+      margin-bottom: 1rem;
+    }
+
+
+
+    .presentacion-contenido {
+      color: white;
+      padding: 2rem;
+
+      .presentacion-info {
+        opacity: 0;
+        animation: aparecer 3s ease-in forwards;
+        animation-delay: 1s;
+        color: $color-texto;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 40px auto 0 auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        font-style: italic;
+      }
+
+      .scroll-down {
+        font-size: 2rem;
+        margin-top: 30px;
+        color: #fff;
+        animation: bounce 2s infinite;
+      }
+    }
+  }
+}

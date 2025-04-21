@@ -1,0 +1,41 @@
+@use "../utilities/variables" as *;
+
+#guia {
+  .guia-contenido {
+    background-color: $color-fondo;
+
+    h2 {
+      font-family: $fuente-primario;
+      color: $color-texto;
+    }
+
+    .guia-red {
+      .row {
+        >div {
+          border-right: 1px solid $color-apagado;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        border-bottom: 1px solid $color-apagado;
+
+        >div:last-child {
+          border-right: none;
+        }
+      }
+
+      .guia-row:last-child {
+        border-bottom: none;
+      }
+
+      .guia-img img {
+        width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}

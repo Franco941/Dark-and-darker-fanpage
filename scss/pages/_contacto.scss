@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *;
+
+#contacto {
+  .contacto-contenido {
+    height: 50vh;
+    background-image: url(../../assets/img/Contacto.png);
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  .contacto-formulario {
+    background-color: $color-fondo;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+
+    .form-control {
+      background-color: $color-texto;
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(100, 150, 250, 0.5);
+      }
+    }
+
+    .btn-primary {
+      background-color: #6496fa;
+    }
+  }
+
+  .contacto-info {
+    h5 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $color-texto;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+
+      i {
+        margin-right: 0.5rem;
+        color: #6496fa;
+      }
+    }
+  }
+}

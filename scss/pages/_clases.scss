@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+
+#clases {
+  .clases-contenido {
+    background-color: $color-fondo;
+
+    h2 {
+      font-family: $fuente-primario;
+      color: $color-texto;
+    }
+
+    .card {
+      border: none;
+
+      &:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        background-color: $color-fondo;
+      }
+
+    }
+  }
+}

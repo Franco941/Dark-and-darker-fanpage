@@ -1,0 +1,147 @@
+// Tablets
+@media (max-width: 991px) {
+
+  // INICIO
+  #principal {
+    .presentacion {
+      min-height: 80vh;
+      padding-top: 20vh;
+
+      .presentacion-contenido {
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+
+        .btn {
+          font-size: 0.95rem;
+        }
+
+        .presentacion-info {
+          padding: 16px;
+          font-size: 1rem;
+          margin: 30px auto 0;
+          max-width: 600px;
+        }
+
+        .scroll-down {
+          font-size: 1.8rem;
+          margin-top: 24px;
+        }
+
+      }
+    }
+  }
+
+  // CLASES
+  .card-img-top {
+    height: 220px;
+  }
+
+  // GUIAS
+  .guia-img img {
+    max-height: 450px !important;
+  }
+
+  // JEFES
+  .jefe-info {
+    padding: 1rem;
+  }
+
+}
+
+// Móviles
+@media (max-width: 575px) {
+
+  // HEADER
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  // INICIO
+  #principal {
+    .presentacion {
+      background-image: url('../../assets/img/Fondo\ de\ inicio2.png');
+      min-height: 60vh;
+      padding-top: 15vh;
+
+      .presentacion-contenido {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .btn {
+          font-size: 0.9rem;
+          padding: 0.6rem 1.2rem;
+        }
+
+        .presentacion-info {
+          padding: 12px;
+          font-size: 0.95rem;
+          margin: 20px auto 0;
+          max-width: 90%;
+        }
+
+        .scroll-down {
+          font-size: 1.5rem;
+          margin-top: 20px;
+        }
+      }
+    }
+
+  }
+
+  // CLASES
+  .card-img-top {
+    height: 180px;
+  }
+
+  // GUIAS
+  .guia-img img {
+    max-height: 400px !important;
+  }
+
+  // JEFES
+  .jefe-info {
+    padding: 0.75rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    ul li {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  // CONTACTO
+  .contacto-contenido {
+    height: 40vh;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  // FOOTER
+  footer {
+    font-size: 0.8rem;
+  }
+
+}
